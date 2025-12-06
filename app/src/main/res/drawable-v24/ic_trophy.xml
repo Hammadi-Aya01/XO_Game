@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="180">
+
+    <!-- Trophy Cup -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M60,50 L60,90 Q60,110 90,110 Q120,110 120,90 L120,50 Z"/>
+
+    <!-- Trophy Base -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M75,110 L105,110 L100,130 L80,130 Z"/>
+
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M70,130 L110,130 L110,140 L70,140 Z"/>
+
+    <!-- Left Handle -->
+    <path
+        android:fillColor="#FFC700"
+        android:pathData="M60,55 Q40,55 40,70 Q40,80 50,82 L55,75 Q50,73 50,68 Q50,63 60,63 Z"/>
+
+    <!-- Right Handle -->
+    <path
+        android:fillColor="#FFC700"
+        android:pathData="M120,55 Q140,55 140,70 Q140,80 130,82 L125,75 Q130,73 130,68 Q130,63 120,63 Z"/>
+
+    <!-- Trophy Top Rim -->
+    <path
+        android:fillColor="#FFED4E"
+        android:pathData="M58,50 L122,50 L120,56 L60,56 Z"/>
+
+    <!-- Star on Trophy -->
+    <path
+        android:fillColor="#FF6348"
+        android:pathData="M90,70 L93,78 L101,78 L95,83 L97,91 L90,86 L83,91 L85,83 L79,78 L87,78 Z"/>
+
+    <!-- Shine effect -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M70,60 Q75,65 75,75 L73,75 Q73,66 70,62 Z"/>
+
+</vector>

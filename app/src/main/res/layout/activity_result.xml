@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Trophy Icon -->
+    <ImageView
+        android:id="@+id/ivTrophy"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_trophy"
+        android:contentDescription="Trophy"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Winner Title -->
+    <TextView
+        android:id="@+id/tvWinnerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/congratulations"
+        android:textSize="28sp"
+        android:textColor="@color/text_white"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Winner Name -->
+    <TextView
+        android:id="@+id/tvWinnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joueur X"
+        android:textSize="36sp"
+        android:textColor="@color/player_x"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tournament_winner"
+        android:textSize="18sp"
+        android:textColor="@color/text_gray"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Scores Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Score Row 1: Player -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tvPlayerLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Joueur"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_white"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/tvPlayerScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="32sp"
+                    android:textColor="@color/player_x"
+                    android:fontFamily="sans-serif-bold" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/secondary_dark"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Score Row 2: Machine -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/machine"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_white"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/tvMachineScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="32sp"
+                    android:textColor="@color/player_o"
+                    android:fontFamily="sans-serif-bold" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/secondary_dark"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Score Row 3: Draws -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Parties nulles"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_white"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/tvDrawScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="32sp"
+                    android:textColor="@color/text_gray"
+                    android:fontFamily="sans-serif-bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Buttons -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveTournament"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/save_tournament"
+        android:textSize="16sp"
+        android:textColor="@color/text_white"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/accent_purple"
+        android:layout_marginBottom="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/back_home"
+        android:textSize="16sp"
+        android:textColor="@color/text_white"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/secondary_dark"
+        app:strokeColor="@color/accent_pink"
+        app:strokeWidth="2dp" />
+
+</LinearLayout>

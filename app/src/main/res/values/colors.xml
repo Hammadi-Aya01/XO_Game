@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme colors -->
+    <color name="primary_dark">#1a1d2e</color>
+    <color name="secondary_dark">#252837</color>
+    <color name="accent_purple">#6c5ce7</color>
+    <color name="accent_pink">#fd79a8</color>
+    <color name="player_x">#00d2d3</color>
+    <color name="player_o">#ff6348</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_gray">#a0a3bd</color>
+    <color name="card_bg">#2d3046</color>
+
+    <!-- Standard Material colors (required by Android) -->
+    <color name="purple_200">#6c5ce7</color>
+    <color name="purple_500">#6c5ce7</color>
+    <color name="purple_700">#5b4bcf</color>
+    <color name="teal_200">#00d2d3</color>
+    <color name="teal_700">#00a8a9</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+</resources>

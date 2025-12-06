@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tic-Tac-Toe</string>
+    <string name="play_solo">Jouer</string>
+    <string name="game_rules">Principe du jeu</string>
+    <string name="last_tournament">Retrouver les scores</string>
+    <string name="choose_symbol">Choisir votre symbole</string>
+    <string name="player_x">Joueur (X)</string>
+    <string name="player_o">Joueur (O)</string>
+    <string name="choose_rounds">Nombre de parties</string>
+    <string name="rounds_5">5 parties</string>
+    <string name="rounds_10">10 parties</string>
+    <string name="rounds_15">15 parties</string>
+    <string name="game_title">Tic-Tac-Toe</string>
+    <string name="your_turn">Votre Tour</string>
+    <string name="machine_turn">Tour de la Machine</string>
+    <string name="reset_game">Réinitialiser</string>
+    <string name="save_tournament">Sauvegarder le tournoi</string>
+    <string name="back_home">Retour à l\'accueil</string>
+    <string name="no_tournament">Aucun tournoi sauvegardé</string>
+    <string name="player">Joueur</string>
+    <string name="machine">Machine</string>
+    <string name="tournament_winner">Vainqueur du Tournoi</string>
+    <string name="congratulations">Félicitations!</string>
+    <string name="draw_tournament">Match Nul!</string>
+</resources>

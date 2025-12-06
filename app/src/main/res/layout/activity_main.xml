@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo Section -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_game_logo"
+            android:contentDescription="Game Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_title"
+            android:textSize="32sp"
+            android:textColor="@color/text_white"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp" />
+
+        <!-- Choose Symbol Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_symbol"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/symbolRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioX"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_x"
+                        android:textColor="@color/text_white"
+                        android:textSize="16sp"
+                        android:buttonTint="@color/player_x"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radioO"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_o"
+                        android:textColor="@color/text_white"
+                        android:textSize="16sp"
+                        android:buttonTint="@color/player_o" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Choose Rounds Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_rounds"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp" />
+
+                <Spinner
+                    android:id="@+id/roundsSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_bg"
+                    android:popupBackground="@color/secondary_dark"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Play Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/play_solo"
+            android:textSize="18sp"
+            android:textColor="@color/text_white"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/accent_purple"
+            android:elevation="4dp" />
+
+        <!-- Game Rules Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRules"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/game_rules"
+            android:textSize="16sp"
+            android:textColor="@color/text_white"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/secondary_dark"
+            app:strokeColor="@color/accent_purple"
+            app:strokeWidth="2dp" />
+
+        <!-- Last Tournament Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLastTournament"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/last_tournament"
+            android:textSize="16sp"
+            android:textColor="@color/text_white"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/secondary_dark"
+            app:strokeColor="@color/accent_pink"
+            app:strokeWidth="2dp" />
+
+    </LinearLayout>
+</ScrollView>
